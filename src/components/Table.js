@@ -1,19 +1,5 @@
 import Badge from './Badge';
-import { mockData } from '../utils/mockData'
 import Option from '../assets/Option';
-
-/*
-no polisi
-nama pelanggan
-type/model
-ditunggu/ditinggal
-status pekerjaan
-permintaan service
-cuci?
-jam masuk
-jam keluar
-status pengerjaan
-*/
 
 const badgeVariant = {
   'Final Inspection': 'primary',
@@ -21,12 +7,10 @@ const badgeVariant = {
   'Tunggu Penyerahan': 'warning',
 }
 
-export default function Table({ data=mockData }){
+export default function Table({ data, columns }){
   if (!data || data.length === 0) {
     return <p>No data available.</p>;
   }
-
-  const columns = [...Object.keys(data[0]), 'actions']
 
   return(
     <table className="table flex table-auto w-full leading-normal">

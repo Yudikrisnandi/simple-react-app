@@ -21,7 +21,7 @@ export default function WelcomPage(){
         <div className="flex flex-row gap-4">
           <div className="w-1/2">
             <Table data={progresData} columns={columns}/>
-            <div className="flex justify-end items-center p-4 mt-3">
+            <div className="flex justify-end items-center mt-3">
               <Button
                 text="Privious"
                 variant="secondary"

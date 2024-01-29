@@ -1,5 +1,6 @@
 import Table from '../components/Table'
 import Button from '../components/Button'
+import Footer from '../components/Footer'
 import VideoPlayer from '../components/VideoPlayer'
 import DateTimeDisplay from '../components/DateTimeDisplay'
 import logo from '../assets/logo.png'
@@ -41,11 +42,7 @@ export default function WelcomPage(){
           </div>
         </div>
       </div>
-      <footer className="w-full h-12 bg-indigo-950 text-white font-bold flex items-center justify-center">
-        <marquee behavior="scroll" direction="left">
-          ⚪ Selamat datang di Honda Maju Pondok Gede ⚪ Call Center 24H Maju Motor Group: 0811 - 9001 - 9000
-        </marquee>
-      </footer>
+      <Footer/>
     </div>
   )
 }

@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import CustomerPage from './pages/CustomerPage';
 import ProgresPage from './pages/ProgresPage';
 import WelcomePage from './pages/WelcomePage';
+import LoginPage from './pages/LoginPage';
 import Sidebar from './components/Sidebar';
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ function App() {
           />
           <Route path="/progres" element={<ProgresPage />} />
           <Route path="/welcome" element={<WelcomePage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>

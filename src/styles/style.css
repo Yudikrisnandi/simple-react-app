@@ -1,0 +1,20 @@
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: marqueeAnimation 60s linear infinite; /* Adjust the duration as needed */
+}
+
+.marquee-text {
+  display: inline-block;
+  padding-right: 10px; /* Adjust the padding to create space between texts */
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+

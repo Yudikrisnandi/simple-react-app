@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Badge({ variant, text }) {
+function Badge({ variant, text, dotIndicator = true }) {
   console.log(text, variant)
   let badgeStyles = '';
   let dotStyles = '';
@@ -30,7 +30,9 @@ function Badge({ variant, text }) {
 
   return (
     <span className={`inline-flex items-center font-bold px-3 py-1 rounded-full ${badgeStyles} max-content`}>
-      <span className={`h-2 w-2 rounded-full mr-1 ${dotStyles}`} />
+      {dotIndicator && (
+        <span className={`h-2 w-2 rounded-full mr-1 ${dotStyles}`} />
+      )}
       {text}
     </span>
   );

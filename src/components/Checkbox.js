@@ -1,17 +1,17 @@
 import React from 'react';
 
-function Checkbox({ label, checked, onChange }) {
+const Checkbox = ({ checked, onChange, label }) => {
   return (
-    <label className="flex items-center">
+    <div className="flex items-center">
       <input
         type="checkbox"
+        className="h-5 w-5 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
         checked={checked}
         onChange={onChange}
-        className="form-checkbox h-5 w-5 text-indigo-600 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
       />
-      <span className="ml-2 text-gray-700">{label}</span>
-    </label>
+      <label className="ml-2 text-sm text-gray-700 font-semibold">{label}</label>
+    </div>
   );
-}
+};
 
 export default Checkbox;
